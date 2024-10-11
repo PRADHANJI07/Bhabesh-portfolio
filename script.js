@@ -39,17 +39,17 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-// dark mode
-let darkModeIcon = document.querySelector("#darkMode-icon"); // Fix the name here
+// Dark mode
+let darkModeIcon = document.querySelector("#darkMode-icon");
 
 darkModeIcon.onclick = () => {
   darkModeIcon.classList.toggle("bx-sun");
   document.body.classList.toggle("dark-mode");
 };
 
-// scroll reveal
+// Scroll reveal
 ScrollReveal({
-  reset: true,
+  reset: true, // Animation repeats when elements enter the viewport
   distance: "80px",
   duration: 2000,
   delay: 100,
@@ -58,12 +58,21 @@ ScrollReveal({
 // Reveal for multiple elements
 ScrollReveal().reveal(".home-content", { origin: 'top' });
 ScrollReveal().reveal(".heading", { origin: 'top' });
-ScrollReveal().reveal('.home-image img, .project-box, .contact-form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-image img, .project-box, .contact', { origin: 'bottom' });
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: 'left' });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", { origin: 'right' });
 
-// form submit
+// **New ScrollReveal for Education Content**
+ScrollReveal().reveal('.education-content', {
+  origin: 'left', 
+  distance: '50px',      
+  duration: 1000,        
+  easing: 'ease-in-out', 
+  interval: 200,         
+  reset: true,           
+});
 
+// Form submit
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
