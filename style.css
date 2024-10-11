@@ -38,6 +38,7 @@
     line-height: 1.6;
   }
 
+  /* navbar */
   .header {
     position: fixed;
     top: 0;
@@ -117,6 +118,7 @@
     padding: 10rem 7% 2rem;
   }
 
+  /* Home section */
   .home {
     display: flex;
     align-items: center;
@@ -300,6 +302,7 @@
     color: var(--main-color);
   }
 
+  /* About section */
   .about {
     display: flex;
     justify-content: center;
@@ -427,7 +430,7 @@
     padding-top: .5rem;
   }
 
-  /* Experience section end */
+  /* Project section */
 
   .project {
     padding-bottom: 10rem;
@@ -507,6 +510,7 @@
     color: #333;
   }
 
+  /* Contact section */
   .contact h2 {
     margin-bottom: 4rem;
   }
