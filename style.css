@@ -775,7 +775,7 @@
 
     .home .profession-container .overlay {
       position: fixed;
-      top: 70rem;
+      top: 75rem;
       left: 50%;
       right: 0;
       transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
@@ -816,8 +816,21 @@
       font-size: 50%;
     }
 
+    #menu-icon {
+      display: block;
+      position: absolute;
+      right: 13rem;
+      font-size: 2.6rem;
+      color: var(--text-color);
+      margin-bottom: .1rem;
+    }
+
     #darkMode-icon {
-      right: 6rem;
+      position: absolute;
+      right: 17rem;
+      font-size: 2.6rem;
+      color: var(--text-color);
+      margin-bottom: .1rem;
     }
 
     .home {
