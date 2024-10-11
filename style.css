@@ -174,6 +174,7 @@
     letter-spacing: .1rem;
     font-weight: 600;
     border: .2rem solid transparent;
+    margin-bottom: 2rem;
     transition: .5s ease;
   }
 
@@ -836,6 +837,7 @@
     .home {
       padding: 0 3% 30rem;
     }
+    
 
     .home .profession-box .profession:nth-child(1) {
       transform: rotate(-90deg) translate(-110px, -220px);
